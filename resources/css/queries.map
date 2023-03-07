@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "queries.css",
+	"sources": [
+		"../scss/queries.scss"
+	],
+	"sourcesContent": [
+		""
+	],
+	"names": [],
+	"mappings": ""
+}

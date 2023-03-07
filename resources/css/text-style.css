@@ -1,0 +1,57 @@
+/* line 5, ../../Github projects/licitatie-auto/resources/scss/text-style.scss */
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* line 11, ../../Github projects/licitatie-auto/resources/scss/text-style.scss */
+h1 {
+  font-size: 2em;
+  line-height: 2em;
+}
+
+/* line 16, ../../Github projects/licitatie-auto/resources/scss/text-style.scss */
+h2 {
+  font-size: 1.6em;
+  line-height: 1.6em;
+}
+
+/* line 21, ../../Github projects/licitatie-auto/resources/scss/text-style.scss */
+h3 {
+  font-size: 1.4em;
+  line-height: 1.4em;
+}
+
+/* line 26, ../../Github projects/licitatie-auto/resources/scss/text-style.scss */
+h4 {
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+
+/* line 30, ../../Github projects/licitatie-auto/resources/scss/text-style.scss */
+h5 {
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+/* line 34, ../../Github projects/licitatie-auto/resources/scss/text-style.scss */
+h6 {
+  font-size: 1.1em;
+  line-height: 1.1em;
+}
+
+/* line 39, ../../Github projects/licitatie-auto/resources/scss/text-style.scss */
+p {
+  font-size: 1em;
+  line-height: 1.05em;
+  font-weight: 500;
+}
+
+/* line 45, ../../Github projects/licitatie-auto/resources/scss/text-style.scss */
+a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+/*# sourceMappingURL=text-style.css.map */

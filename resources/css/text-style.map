@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "text-style.css",
+	"sources": [
+		"../scss/text-style.scss"
+	],
+	"sourcesContent": [
+		"$white: #fafafa;\r\n$gray: #eaeaea;\r\n$black: #1a1a1a;\r\n\r\nhtml{\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 16px;\r\n    font-weight: 500;\r\n}\r\n\r\nh1{\r\n    font-size: 2em;\r\n    line-height: 2em;\r\n}\r\n\r\nh2{\r\n    font-size: 1.6em;\r\n    line-height: 1.6em;\r\n}\r\n\r\nh3{\r\n    font-size: 1.4em;\r\n    line-height: 1.4em;\r\n}\r\n\r\nh4{\r\n    font-size: 1.3em;\r\n    line-height: 1.3em;\r\n}\r\nh5{\r\n    font-size: 1.2em;\r\n    line-height: 1.2em;\r\n}\r\nh6{\r\n    font-size: 1.1em;\r\n    line-height: 1.1em;\r\n}\r\n\r\np{\r\n    font-size: 1em;\r\n    line-height: 1.05em;\r\n    font-weight: 500;\r\n}\r\n\r\na{\r\n    text-decoration: none;\r\n    color: $black;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": ";AAIA,AAAA,IAAI,CAAA;EACA,WAAW,EAAE,wBAAwB;EACrC,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;CACnB;;;AAED,AAAA,EAAE,CAAA;EACE,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,GAAG;CACnB;;;AAED,AAAA,EAAE,CAAA;EACE,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,KAAK;CACrB;;;AAED,AAAA,EAAE,CAAA;EACE,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,KAAK;CACrB;;;AAED,AAAA,EAAE,CAAA;EACE,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,KAAK;CACrB;;;AACD,AAAA,EAAE,CAAA;EACE,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,KAAK;CACrB;;;AACD,AAAA,EAAE,CAAA;EACE,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,KAAK;CACrB;;;AAED,AAAA,CAAC,CAAA;EACG,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,MAAM;EACnB,WAAW,EAAE,GAAG;CACnB;;;AAED,AAAA,CAAC,CAAA;EACG,eAAe,EAAE,IAAI;EACrB,KAAK,EA5CD,OAAO;CA6Cd"
+}

@@ -1,0 +1,247 @@
+$white: #fafafa;
+$gray: #eaeaea;
+$black: #1a1a1a;
+
+
+$maxWidth: 1360px;
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+html{
+    color: $black;
+}
+
+li{
+    list-style: none;
+}
+
+.page-wrap{
+    padding-top: 110px;
+    background-color: $white;
+}
+// Header - start
+
+header{
+    width: 100vw;
+    height: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px 0 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    z-index: 10000;
+}
+
+.header-wrap{
+    max-width: $maxWidth;
+    width: 100%;
+    border-bottom: 1px solid #00000033;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 80px;
+    overflow: hidden;
+}
+
+.header-left-wrap,.header-right-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.header-left-wrap{
+    justify-content: flex-start;
+}
+.header-right-wrap{
+    justify-content: flex-end;
+}
+
+
+
+// Header - end
+
+
+// Footer - start
+footer{
+    background-color: $gray;
+    padding: 5px 0;
+}
+
+.footer-wrap{
+    max-width: $maxWidth;
+    margin:0 auto;
+    padding: 30px 0 0;
+}
+
+.footer-row-1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;   
+    align-content: flex-start;   
+}
+
+.footer-row-1-col{
+    flex: 1 1 20%;
+}
+
+.footer-nav-title{
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+.footer-nav{
+    margin-top:20px;
+}
+.footer-nav-li{
+    margin: 7px 0;
+}
+.footer-nav-li-a{
+    font-size: 14px;
+}
+// Footer - end
+
+.page-content{
+    max-width: $maxWidth;
+    width: 100%;
+    margin:0 auto;
+    display: block;
+    padding-bottom: 50px;
+}
+
+
+// 404 Page - start
+.page-404{
+    min-height: calc(100vh - 140px);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.content-404{
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.content-404 span{
+    font-size: 218px;
+}
+// 404 Page - end
+
+
+
+
+// Auctions list - start
+
+.auctions-list{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:25px;
+}
+
+.auction-item{
+    list-style: none;
+    margin: 15px 0 35px;
+}
+
+
+.auction-item-image{
+    width:100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.auction-item-image-link{
+    position: relative;
+}
+
+.auction-item-image-ratio{
+    position: relative;
+    padding-bottom: 65%;
+}
+
+.auction-item-image-wrap{
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.auction-item-image-wrap img{
+    width: 100%;
+    height: auto;
+    display:block !important;
+}
+
+
+.auction-item-metadata{
+    margin-top: 20px;
+}
+
+.auction-item-metadata-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.auction-item-metadata-title a{
+    text-decoration: none;
+    color:$black;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+
+.auction-item-metadata-title:hover a{
+    text-decoration: underline;
+}
+
+.auction-item-metadata-watch{
+    opacity: 0;
+    transition: 0.15s ease;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.auction-item-metadata-location{
+    opacity: 0.8;
+}
+
+.auction-item:hover .auction-item-image-link::after{
+    content: "";
+    background-color: #1a1a1a10;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.auction-item:hover .auction-item-metadata-watch{
+    opacity: 1;
+}
+
+// Auctions list - end
