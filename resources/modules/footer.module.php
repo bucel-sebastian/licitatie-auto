@@ -12,16 +12,16 @@
                 </p>
                 <nav class='footer-nav'>
                     <li class='footer-nav-li'>
-                        <a class='footer-nav-li-a' href=''>Cumpărarea unei mașini</a>
+                        <a class='footer-nav-li-a' href='/about/?section=cumpararea'>Cumpărarea unei mașini</a>
                     </li>
                     <li class='footer-nav-li'>
-                        <a class='footer-nav-li-a' href=''>Vânzarea unei mașini</a>
+                        <a class='footer-nav-li-a' href='/about/?section=vanzarea'>Vânzarea unei mașini</a>
                     </li>
                     <li class='footer-nav-li'>
-                        <a class='footer-nav-li-a' href=''>Finalizarea vânzări</a>
+                        <a class='footer-nav-li-a' href='/about/?section=finalizarea'>Finalizarea vânzări</a>
                     </li>
                     <li class='footer-nav-li'>
-                        <a class='footer-nav-li-a' href=''>FAQs</a>
+                        <a class='footer-nav-li-a' href='/about/?section=faq'>FAQs</a>
                     </li>
                 </nav>
             </div>
@@ -31,10 +31,10 @@
                 </p>
                 <nav class='footer-nav'>
                     <li class='footer-nav-li'>
-                        <a class='footer-nav-li-a' href=''>Publică mașina ta</a>
+                        <a class='footer-nav-li-a' href='/sell'>Publică mașina ta</a>
                     </li>
                     <li class='footer-nav-li'>
-                        <a class='footer-nav-li-a' href=''>Ghid de fotografiere</a>
+                        <a class='footer-nav-li-a' href='/photos'>Ghid de fotografiere</a>
                     </li>
                 </nav>
             </div>
@@ -44,13 +44,13 @@
                 </p>
                 <nav class='footer-nav'>
                     <li class='footer-nav-li'>
-                        <a class='footer-nav-li-a' href=''>Suport</a>
+                        <a class='footer-nav-li-a' href='/support'>Suport</a>
                     </li>
                     <li class='footer-nav-li'>
-                        <a class='footer-nav-li-a' href=''>Livrare</a>
+                        <a class='footer-nav-li-a' href='/shipping'>Livrare</a>
                     </li>
                     <li class='footer-nav-li'>
-                        <a class='footer-nav-li-a' href=''>Termeni și condiții</a>
+                        <a class='footer-nav-li-a' href='/terms'>Termeni și condiții</a>
                     </li>
                 </nav>
             </div>

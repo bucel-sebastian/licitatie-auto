@@ -4,17 +4,27 @@ class Route {
 
     static public $routes = [];
 
-    static public function get(string $path, callable $callback){
+    static public function set(string $path, callable $callback){
         global $routes;
         
         $path = trim($path,'/');
         $routes [ $path ] = $callback;
     }
     
+
+// DE SCOS PARAMETRII DIN URL
+
+
+
     static public function run(){
         global $routes;
 
         $uri = $_SERVER['REQUEST_URI'];
+        $uri = explode('?',$uri);
+
+        $uri_parameters = $uri[1];
+        $uri = $uri[0];
+        
         $uri = trim($uri,'/');
         // $uri = parse_url($uri);
 

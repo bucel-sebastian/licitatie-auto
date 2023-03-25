@@ -1,27 +1,27 @@
-/* line 9, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 11, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* line 15, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 17, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 html {
   color: #1a1a1a;
 }
 
-/* line 19, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 21, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 li {
   list-style: none;
 }
 
-/* line 23, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 25, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .page-wrap {
   padding-top: 110px;
   background-color: #fafafa;
 }
 
-/* line 29, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 31, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 header {
   width: 100vw;
   height: auto;
@@ -36,7 +36,7 @@ header {
   z-index: 10000;
 }
 
-/* line 43, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 45, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .header-wrap {
   max-width: 1360px;
   width: 100%;
@@ -50,7 +50,7 @@ header {
   overflow: hidden;
 }
 
-/* line 56, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 58, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .header-left-wrap, .header-right-wrap {
   display: flex;
   flex-direction: row;
@@ -58,30 +58,120 @@ header {
   align-content: center;
 }
 
-/* line 63, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 65, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .header-left-wrap {
   justify-content: flex-start;
 }
 
-/* line 66, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 68, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .header-right-wrap {
   justify-content: flex-end;
 }
 
+/* line 72, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+.header-logo {
+  margin-right: 25px;
+}
+
 /* line 76, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 81, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+.nav-item {
+  margin: 0 10px;
+}
+
+/* line 85, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+.nav-item-featured .nav-link {
+  background-color: #4ad493;
+  border-radius: 25px;
+  padding: 9px 10px;
+}
+
+/* line 90, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+.nav-item-featured .nav-link:hover {
+  filter: brightness(0.95);
+}
+
+/* line 94, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+.nav-link {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+/* line 101, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+#login-button {
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #4ad493;
+  border-radius: 5px;
+  padding: 13px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 111, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+#login-button:hover {
+  filter: brightness(0.95);
+}
+
+/* line 115, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+#header-search-bar-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin-right: 25px;
+}
+
+/* line 123, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+#header-search-bar-input {
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 13px 50px;
+  width: 400px;
+  border: none;
+  outline: none;
+  background-color: #eaeaea;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 136, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+#header-search-bar-input:hover {
+  filter: brightness(0.95);
+}
+
+/* line 140, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+#header-search-bar-submit {
+  position: absolute;
+  left: 20px;
+  z-index: 10;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* line 154, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 footer {
   background-color: #eaeaea;
   padding: 5px 0;
 }
 
-/* line 81, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 159, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .footer-wrap {
   max-width: 1360px;
   margin: 0 auto;
   padding: 30px 0 0;
 }
 
-/* line 87, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 165, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .footer-row-1 {
   display: flex;
   flex-wrap: wrap;
@@ -90,33 +180,33 @@ footer {
   align-content: flex-start;
 }
 
-/* line 95, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 173, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .footer-row-1-col {
   flex: 1 1 20%;
 }
 
-/* line 99, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 177, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .footer-nav-title {
   opacity: 0.8;
   font-size: 14px;
 }
 
-/* line 104, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 182, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .footer-nav {
   margin-top: 20px;
 }
 
-/* line 107, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 185, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .footer-nav-li {
   margin: 7px 0;
 }
 
-/* line 110, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 188, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .footer-nav-li-a {
   font-size: 14px;
 }
 
-/* line 115, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 193, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .page-content {
   max-width: 1360px;
   width: 100%;
@@ -125,7 +215,7 @@ footer {
   padding-bottom: 50px;
 }
 
-/* line 125, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 203, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .page-404 {
   min-height: calc(100vh - 140px);
   display: flex !important;
@@ -134,50 +224,50 @@ footer {
   align-content: center;
 }
 
-/* line 133, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 211, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .content-404 {
   text-align: center;
   width: max-content;
   margin: 0 auto;
 }
 
-/* line 139, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 217, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .content-404 span {
   font-size: 218px;
 }
 
-/* line 149, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 227, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .auctions-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 25px;
 }
 
-/* line 155, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 233, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .auction-item {
   list-style: none;
   margin: 15px 0 35px;
 }
 
-/* line 161, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 239, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .auction-item-image {
   width: 100%;
   border-radius: 5px;
   overflow: hidden;
 }
 
-/* line 167, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 245, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .auction-item-image-link {
   position: relative;
 }
 
-/* line 171, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 249, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .auction-item-image-ratio {
   position: relative;
   padding-bottom: 65%;
 }
 
-/* line 176, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 254, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .auction-item-image-wrap {
   position: absolute;
   top: 0;
@@ -190,19 +280,19 @@ footer {
   height: 100%;
 }
 
-/* line 188, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 266, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .auction-item-image-wrap img {
   width: 100%;
   height: auto;
   display: block !important;
 }
 
-/* line 195, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 273, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .auction-item-metadata {
   margin-top: 20px;
 }
 
-/* line 199, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 277, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .auction-item-metadata-title {
   display: flex;
   flex-direction: row;
@@ -212,7 +302,7 @@ footer {
   width: 100%;
 }
 
-/* line 208, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 286, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .auction-item-metadata-title a {
   text-decoration: none;
   color: #1a1a1a;
@@ -221,12 +311,12 @@ footer {
   font-weight: 700;
 }
 
-/* line 216, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 294, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .auction-item-metadata-title:hover a {
   text-decoration: underline;
 }
 
-/* line 220, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 298, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .auction-item-metadata-watch {
   opacity: 0;
   transition: 0.15s ease;
@@ -236,12 +326,12 @@ footer {
   cursor: pointer;
 }
 
-/* line 229, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 307, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .auction-item-metadata-location {
   opacity: 0.8;
 }
 
-/* line 233, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 311, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .auction-item:hover .auction-item-image-link::after {
   content: "";
   background-color: #1a1a1a10;
@@ -252,9 +342,72 @@ footer {
   height: 100%;
 }
 
-/* line 243, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+/* line 321, ../../Github projects/licitatie-auto/resources/scss/style.scss */
 .auction-item:hover .auction-item-metadata-watch {
   opacity: 1;
+}
+
+/* line 328, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+.page-row {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+/* line 334, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+.page-col-1 {
+  width: 80%;
+}
+
+/* line 337, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+.page-col-2 {
+  width: 20%;
+}
+
+/* line 341, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+.page-image-row {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 500px;
+}
+
+/* line 352, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+.auction-page-col-1 {
+  width: 70%;
+}
+
+/* line 355, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+.auction-page-col-2 {
+  width: 30%;
+}
+
+/* line 359, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+.auction-image-cols {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  height: 100%;
+}
+
+/* line 366, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+.auction-images-group {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3px;
+}
+
+/* line 374, ../../Github projects/licitatie-auto/resources/scss/style.scss */
+.auction-images-group img {
+  width: 100%;
+  height: 100%;
+  background-color: #3db07a;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,19 +11,27 @@ class Database {
         }
     }
 
-    function insert(array $variables, string $table_name) {
+    function insert( string $table_name, array $variables) {
         $table_columns = array();
         $table_values = array();
+
+        foreach ($variables as $key => $value) {
+            array_push($table_columns,"`" . $key . "`");
+            array_push($table_values,"'" . $value ."'");
+        }
+
+    
+        $sql_query = "INSERT INTO `" . $table_name . "` (" . implode(", ",$table_columns) . ") VALUES (" . implode(", ",$table_values) . ")";
 
 
 
         if(mysqli_query($this->connection,$sql_query)){
-            return 1;
+            return $sql_query;
         }
         return $this->connection->error;
     }
 
-    function get() {
+    function get_results() {
 
 
         if(mysqli_query($this->connection,$sql_query)){
@@ -64,4 +72,6 @@ class Database {
         }
         return $this->connection->error;
     }
+
+
 }

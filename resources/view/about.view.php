@@ -1,5 +1,5 @@
 <?php
-    $page_title = "Înregistrare - ";
+    $page_title = "Cine suntem? - ";
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +20,7 @@
             include ABSPATH . 'resources/modules/header.module.php';
         ?>
         <div class="page-content">
-            <h1>Register page</h1>
+            <h1>Cine suntem? page</h1>
             
           
 

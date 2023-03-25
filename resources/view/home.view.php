@@ -1,5 +1,9 @@
 <?php
-    $page_title = "Acasă";
+    $page_title = "Acasă - ";
+
+
+
+    $auctions_list = [];
 ?>
 
 <!DOCTYPE html>
@@ -32,295 +36,327 @@
             </div>
 
 
-            <div>
-                <div>
+            <div class="page-row">
+                <div class="page-col-1">
+                    <ul class="auctions-list">
+                        <li class='auction-item'>
+                            <!-- Imagine -->
+                            <div class='auction-item-image'>
+                                <a href='/auction/id/nume' class='auction-item-image-link'>
+                                    <!-- Container imagine -->
+                                    <div class='auction-item-image-ratio'>
+                                        <div class='auction-item-image-wrap'>
+                                            <img src='/resources/assets/img/no-image.png' alt=''>
+                                        </div>
+                                    </div>
+                                    
 
+                                    <!-- Mini bar info bid si timp -->
+                                    <div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Metadate -->
+                            <div class='auction-item-metadata'>
+                                <div class='auction-item-metadata-title'>
+                                    <a href='/auction/id/nume'>Titlu</a>
+                                    <button class='auction-item-metadata-watch'>
+                                        a
+                                    </button>
+                                </div>
+                                <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
+                                <p class='auction-item-metadata-location'>locatie</p>
+                            </div>
+                        </li>
+
+                        <li class='auction-item'>
+                            <!-- Imagine -->
+                            <div class='auction-item-image'>
+                                <a href='/auction/id/nume' class='auction-item-image-link'>
+                                    <!-- Container imagine -->
+                                    <div class='auction-item-image-ratio'>
+                                        <div class='auction-item-image-wrap'>
+                                            <img src='/resources/assets/img/no-image.png' alt=''>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <!-- Mini bar info bid si timp -->
+                                    <div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Metadate -->
+                            <div class='auction-item-metadata'>
+                                <div class='auction-item-metadata-title'>
+                                    <a href='/auction/id/nume'>Titlu</a>
+                                    <button class='auction-item-metadata-watch'>
+                                        a
+                                    </button>
+                                </div>
+                                <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
+                                <p class='auction-item-metadata-location'>locatie</p>
+                            </div>
+                        </li>
+
+                        <li class='auction-item'>
+                            <!-- Imagine -->
+                            <div class='auction-item-image'>
+                                <a href='/auction/id/nume' class='auction-item-image-link'>
+                                    <!-- Container imagine -->
+                                    <div class='auction-item-image-ratio'>
+                                        <div class='auction-item-image-wrap'>
+                                            <img src='/resources/assets/img/no-image.png' alt=''>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <!-- Mini bar info bid si timp -->
+                                    <div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Metadate -->
+                            <div class='auction-item-metadata'>
+                                <div class='auction-item-metadata-title'>
+                                    <a href='/auction/id/nume'>Titlu</a>
+                                    <button class='auction-item-metadata-watch'>
+                                        a
+                                    </button>
+                                </div>
+                                <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
+                                <p class='auction-item-metadata-location'>locatie</p>
+                            </div>
+                        </li>
+
+                        <li class='auction-item'>
+                            <!-- Imagine -->
+                            <div class='auction-item-image'>
+                                <a href='/auction/id/nume' class='auction-item-image-link'>
+                                    <!-- Container imagine -->
+                                    <div class='auction-item-image-ratio'>
+                                        <div class='auction-item-image-wrap'>
+                                            <img src='/resources/assets/img/no-image.png' alt=''>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <!-- Mini bar info bid si timp -->
+                                    <div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Metadate -->
+                            <div class='auction-item-metadata'>
+                                <div class='auction-item-metadata-title'>
+                                    <a href='/auction/id/nume'>Titlu</a>
+                                    <button class='auction-item-metadata-watch'>
+                                        a
+                                    </button>
+                                </div>
+                                <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
+                                <p class='auction-item-metadata-location'>locatie</p>
+                            </div>
+                        </li>
+
+                        <li class='auction-item'>
+                            <!-- Imagine -->
+                            <div class='auction-item-image'>
+                                <a href='/auction/id/nume' class='auction-item-image-link'>
+                                    <!-- Container imagine -->
+                                    <div class='auction-item-image-ratio'>
+                                        <div class='auction-item-image-wrap'>
+                                            <img src='/resources/assets/img/no-image.png' alt=''>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <!-- Mini bar info bid si timp -->
+                                    <div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Metadate -->
+                            <div class='auction-item-metadata'>
+                                <div class='auction-item-metadata-title'>
+                                    <a href='/auction/id/nume'>Titlu</a>
+                                    <button class='auction-item-metadata-watch'>
+                                        a
+                                    </button>
+                                </div>
+                                <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
+                                <p class='auction-item-metadata-location'>locatie</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div>
+                <div class="page-col-2">
+                <ul class="auctions-list-col">
+                        <li class='auction-item'>
+                            <!-- Imagine -->
+                            <div class='auction-item-image'>
+                                <a href='/auction/id/nume' class='auction-item-image-link'>
+                                    <!-- Container imagine -->
+                                    <div class='auction-item-image-ratio'>
+                                        <div class='auction-item-image-wrap'>
+                                            <img src='/resources/assets/img/no-image.png' alt=''>
+                                        </div>
+                                    </div>
+                                    
 
+                                    <!-- Mini bar info bid si timp -->
+                                    <div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Metadate -->
+                            <div class='auction-item-metadata'>
+                                <div class='auction-item-metadata-title'>
+                                    <a href='/auction/id/nume'>Titlu</a>
+                                    <button class='auction-item-metadata-watch'>
+                                        a
+                                    </button>
+                                </div>
+                                <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
+                                <p class='auction-item-metadata-location'>locatie</p>
+                            </div>
+                        </li>
+
+                        <li class='auction-item'>
+                            <!-- Imagine -->
+                            <div class='auction-item-image'>
+                                <a href='/auction/id/nume' class='auction-item-image-link'>
+                                    <!-- Container imagine -->
+                                    <div class='auction-item-image-ratio'>
+                                        <div class='auction-item-image-wrap'>
+                                            <img src='/resources/assets/img/no-image.png' alt=''>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <!-- Mini bar info bid si timp -->
+                                    <div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Metadate -->
+                            <div class='auction-item-metadata'>
+                                <div class='auction-item-metadata-title'>
+                                    <a href='/auction/id/nume'>Titlu</a>
+                                    <button class='auction-item-metadata-watch'>
+                                        a
+                                    </button>
+                                </div>
+                                <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
+                                <p class='auction-item-metadata-location'>locatie</p>
+                            </div>
+                        </li>
+
+                        <li class='auction-item'>
+                            <!-- Imagine -->
+                            <div class='auction-item-image'>
+                                <a href='/auction/id/nume' class='auction-item-image-link'>
+                                    <!-- Container imagine -->
+                                    <div class='auction-item-image-ratio'>
+                                        <div class='auction-item-image-wrap'>
+                                            <img src='/resources/assets/img/no-image.png' alt=''>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <!-- Mini bar info bid si timp -->
+                                    <div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Metadate -->
+                            <div class='auction-item-metadata'>
+                                <div class='auction-item-metadata-title'>
+                                    <a href='/auction/id/nume'>Titlu</a>
+                                    <button class='auction-item-metadata-watch'>
+                                        a
+                                    </button>
+                                </div>
+                                <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
+                                <p class='auction-item-metadata-location'>locatie</p>
+                            </div>
+                        </li>
+
+                        <li class='auction-item'>
+                            <!-- Imagine -->
+                            <div class='auction-item-image'>
+                                <a href='/auction/id/nume' class='auction-item-image-link'>
+                                    <!-- Container imagine -->
+                                    <div class='auction-item-image-ratio'>
+                                        <div class='auction-item-image-wrap'>
+                                            <img src='/resources/assets/img/no-image.png' alt=''>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <!-- Mini bar info bid si timp -->
+                                    <div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Metadate -->
+                            <div class='auction-item-metadata'>
+                                <div class='auction-item-metadata-title'>
+                                    <a href='/auction/id/nume'>Titlu</a>
+                                    <button class='auction-item-metadata-watch'>
+                                        a
+                                    </button>
+                                </div>
+                                <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
+                                <p class='auction-item-metadata-location'>locatie</p>
+                            </div>
+                        </li>
+
+                        <li class='auction-item'>
+                            <!-- Imagine -->
+                            <div class='auction-item-image'>
+                                <a href='/auction/id/nume' class='auction-item-image-link'>
+                                    <!-- Container imagine -->
+                                    <div class='auction-item-image-ratio'>
+                                        <div class='auction-item-image-wrap'>
+                                            <img src='/resources/assets/img/no-image.png' alt=''>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <!-- Mini bar info bid si timp -->
+                                    <div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Metadate -->
+                            <div class='auction-item-metadata'>
+                                <div class='auction-item-metadata-title'>
+                                    <a href='/auction/id/nume'>Titlu</a>
+                                    <button class='auction-item-metadata-watch'>
+                                        a
+                                    </button>
+                                </div>
+                                <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
+                                <p class='auction-item-metadata-location'>locatie</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
 
-            <ul class="auctions-list">
-
-                <li class='auction-item'>
-                    <!-- Imagine -->
-                    <div class='auction-item-image'>
-                        <a href='#' class='auction-item-image-link'>
-                            <!-- Container imagine -->
-                            <div class='auction-item-image-ratio'>
-                                <div class='auction-item-image-wrap'>
-                                    <img src='/resources/assets/img/no-image.png' alt=''>
-                                </div>
-                            </div>
-                            
-
-                            <!-- Mini bar info bid si timp -->
-                            <div>
-
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Metadate -->
-                    <div class='auction-item-metadata'>
-                        <div class='auction-item-metadata-title'>
-                            <a href=''>Titlu</a>
-                            <button class='auction-item-metadata-watch'>
-                                a
-                            </button>
-                        </div>
-                        <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
-                        <p class='auction-item-metadata-location'>locatie</p>
-                    </div>
-                </li>
-                <li class='auction-item'>
-                    <!-- Imagine -->
-                    <div class='auction-item-image'>
-                        <a href='#' class='auction-item-image-link'>
-                            <!-- Container imagine -->
-                            <div class='auction-item-image-ratio'>
-                                <div class='auction-item-image-wrap'>
-                                    <img src='/resources/assets/img/no-image.png' alt=''>
-                                </div>
-                            </div>
-                            
-
-                            <!-- Mini bar info bid si timp -->
-                            <div>
-
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Metadate -->
-                    <div class='auction-item-metadata'>
-                        <div class='auction-item-metadata-title'>
-                            <a href=''>Titlu</a>
-                            <button class='auction-item-metadata-watch'>
-                                a
-                            </button>
-                        </div>
-                        <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
-                        <p class='auction-item-metadata-location'>locatie</p>
-                    </div>
-                </li>
-                <li class='auction-item'>
-                    <!-- Imagine -->
-                    <div class='auction-item-image'>
-                        <a href='#' class='auction-item-image-link'>
-                            <!-- Container imagine -->
-                            <div class='auction-item-image-ratio'>
-                                <div class='auction-item-image-wrap'>
-                                    <img src='/resources/assets/img/no-image.png' alt=''>
-                                </div>
-                            </div>
-                            
-
-                            <!-- Mini bar info bid si timp -->
-                            <div>
-
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Metadate -->
-                    <div class='auction-item-metadata'>
-                        <div class='auction-item-metadata-title'>
-                            <a href=''>Titlu</a>
-                            <button class='auction-item-metadata-watch'>
-                                a
-                            </button>
-                        </div>
-                        <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
-                        <p class='auction-item-metadata-location'>locatie</p>
-                    </div>
-                </li>
-                <li class='auction-item'>
-                    <!-- Imagine -->
-                    <div class='auction-item-image'>
-                        <a href='#' class='auction-item-image-link'>
-                            <!-- Container imagine -->
-                            <div class='auction-item-image-ratio'>
-                                <div class='auction-item-image-wrap'>
-                                    <img src='/resources/assets/img/no-image.png' alt=''>
-                                </div>
-                            </div>
-                            
-
-                            <!-- Mini bar info bid si timp -->
-                            <div>
-
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Metadate -->
-                    <div class='auction-item-metadata'>
-                        <div class='auction-item-metadata-title'>
-                            <a href=''>Titlu</a>
-                            <button class='auction-item-metadata-watch'>
-                                a
-                            </button>
-                        </div>
-                        <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
-                        <p class='auction-item-metadata-location'>locatie</p>
-                    </div>
-                </li>
-                <li class='auction-item'>
-                    <!-- Imagine -->
-                    <div class='auction-item-image'>
-                        <a href='#' class='auction-item-image-link'>
-                            <!-- Container imagine -->
-                            <div class='auction-item-image-ratio'>
-                                <div class='auction-item-image-wrap'>
-                                    <img src='/resources/assets/img/no-image.png' alt=''>
-                                </div>
-                            </div>
-                            
-
-                            <!-- Mini bar info bid si timp -->
-                            <div>
-
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Metadate -->
-                    <div class='auction-item-metadata'>
-                        <div class='auction-item-metadata-title'>
-                            <a href=''>Titlu</a>
-                            <button class='auction-item-metadata-watch'>
-                                a
-                            </button>
-                        </div>
-                        <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
-                        <p class='auction-item-metadata-location'>locatie</p>
-                    </div>
-                </li>
-                <li class='auction-item'>
-                    <!-- Imagine -->
-                    <div class='auction-item-image'>
-                        <a href='#' class='auction-item-image-link'>
-                            <!-- Container imagine -->
-                            <div class='auction-item-image-ratio'>
-                                <div class='auction-item-image-wrap'>
-                                    <img src='/resources/assets/img/no-image.png' alt=''>
-                                </div>
-                            </div>
-                            
-
-                            <!-- Mini bar info bid si timp -->
-                            <div>
-
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Metadate -->
-                    <div class='auction-item-metadata'>
-                        <div class='auction-item-metadata-title'>
-                            <a href=''>Titlu</a>
-                            <button class='auction-item-metadata-watch'>
-                                a
-                            </button>
-                        </div>
-                        <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
-                        <p class='auction-item-metadata-location'>locatie</p>
-                    </div>
-                </li>
-                <li class='auction-item'>
-                    <!-- Imagine -->
-                    <div class='auction-item-image'>
-                        <a href='#' class='auction-item-image-link'>
-                            <!-- Container imagine -->
-                            <div class='auction-item-image-ratio'>
-                                <div class='auction-item-image-wrap'>
-                                    <img src='/resources/assets/img/no-image.png' alt=''>
-                                </div>
-                            </div>
-                            
-
-                            <!-- Mini bar info bid si timp -->
-                            <div>
-
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Metadate -->
-                    <div class='auction-item-metadata'>
-                        <div class='auction-item-metadata-title'>
-                            <a href=''>Titlu</a>
-                            <button class='auction-item-metadata-watch'>
-                                a
-                            </button>
-                        </div>
-                        <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
-                        <p class='auction-item-metadata-location'>locatie</p>
-                    </div>
-                </li>
-                <li class='auction-item'>
-                    <!-- Imagine -->
-                    <div class='auction-item-image'>
-                        <a href='#' class='auction-item-image-link'>
-                            <!-- Container imagine -->
-                            <div class='auction-item-image-ratio'>
-                                <div class='auction-item-image-wrap'>
-                                    <img src='/resources/assets/img/no-image.png' alt=''>
-                                </div>
-                            </div>
-                            
-
-                            <!-- Mini bar info bid si timp -->
-                            <div>
-
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Metadate -->
-                    <div class='auction-item-metadata'>
-                        <div class='auction-item-metadata-title'>
-                            <a href=''>Titlu</a>
-                            <button class='auction-item-metadata-watch'>
-                                a
-                            </button>
-                        </div>
-                        <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
-                        <p class='auction-item-metadata-location'>locatie</p>
-                    </div>
-                </li>
-                <li class='auction-item'>
-                    <!-- Imagine -->
-                    <div class='auction-item-image'>
-                        <a href='#' class='auction-item-image-link'>
-                            <!-- Container imagine -->
-                            <div class='auction-item-image-ratio'>
-                                <div class='auction-item-image-wrap'>
-                                    <img src='/resources/assets/img/no-image.png' alt=''>
-                                </div>
-                            </div>
-                            
-
-                            <!-- Mini bar info bid si timp -->
-                            <div>
-
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Metadate -->
-                    <div class='auction-item-metadata'>
-                        <div class='auction-item-metadata-title'>
-                            <a href=''>Titlu</a>
-                            <button class='auction-item-metadata-watch'>
-                                a
-                            </button>
-                        </div>
-                        <p class='auction-item-metadata-subtitle'>Subtitlu bla bla bla</p>
-                        <p class='auction-item-metadata-location'>locatie</p>
-                    </div>
-                </li>
-                
-                
-                
-
-                
-
-            </ul>
+            
         </div>
         
         

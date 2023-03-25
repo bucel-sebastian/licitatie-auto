@@ -1,6 +1,8 @@
 $white: #fafafa;
 $gray: #eaeaea;
 $black: #1a1a1a;
+$primary: #4ad493;
+$secondary: #3db07a;
 
 
 $maxWidth: 1360px;
@@ -67,7 +69,83 @@ header{
     justify-content: flex-end;
 }
 
+.header-logo{
+    margin-right: 25px;
+}
 
+.navbar-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item{
+    margin:0 10px;
+}
+
+.nav-item-featured .nav-link{
+    background-color: $primary;
+    border-radius: 25px;
+    padding: 9px 10px;
+}
+.nav-item-featured .nav-link:hover{
+    filter: brightness(0.95);
+}
+
+.nav-link{
+    color:$black;
+    font-weight: 600;
+}
+
+
+
+#login-button{
+    color:$black;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: $primary;
+    border-radius: 5px;
+    padding: 13px 12px;
+    border: none;
+    cursor: pointer;
+}
+#login-button:hover{
+    filter: brightness(0.95);
+}
+
+#header-search-bar-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-right: 25px;
+}
+
+#header-search-bar-input{
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 13px 50px;
+    width: 400px;
+    border: none;
+    outline:none;
+    background-color: $gray;
+    position: relative;
+    z-index: 1;
+}
+
+#header-search-bar-input:hover{
+    filter: brightness(0.95);
+}
+
+#header-search-bar-submit{
+    position: absolute;
+    left: 20px;
+    z-index: 10;
+    background:none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 
 // Header - end
 
@@ -245,3 +323,56 @@ footer{
 }
 
 // Auctions list - end
+
+
+.page-row{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.page-col-1{
+    width: 80%;
+}
+.page-col-2{
+    width: 20%;
+}
+
+.page-image-row{
+    display: flex;
+    flex-direction: row;
+    gap:3px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 500px;
+}
+
+.auction-page-col-1{
+    width: 70%;
+}
+.auction-page-col-2{
+    width: 30%;
+}
+
+.auction-image-cols{
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+    height: 100%;
+}
+
+.auction-images-group{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:3px;
+}
+
+.auction-images-group img{
+    width: 100%;
+    height: 100%;
+    background-color: #3db07a;
+}

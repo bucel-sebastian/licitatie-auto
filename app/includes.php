@@ -4,4 +4,5 @@
 include ABSPATH . 'app/functions.php';
 // include ABSPATH . 'app/Classes/Database.php';
 include ABSPATH . 'app/Classes/Route.php';
+include ABSPATH . 'app/routes.php';
 
