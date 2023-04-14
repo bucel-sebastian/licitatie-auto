@@ -1,0 +1,44 @@
+#footer {
+    background-color: var(--background-secondary);
+    padding: 5px 0;
+  }
+  
+  .footer_wrap {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 30px 0 0;
+  }
+  
+  .footer_row_1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  
+  .footer_row_1_col {
+    flex: 1 1 20%;
+  }
+  
+  .footer_nav_title {
+    opacity: 0.8;
+    font-size: 14px;
+  }
+  
+  .footer_nav {
+    margin-top: 20px;
+  }
+  
+  .footer_nav_li {
+    list-style: none;
+    margin: 7px 0;
+  }
+  
+  .footer_nav_li_a {
+    font-size: 14px;
+  }
+
+  .anpc_button{
+    width: 250px;
+  }

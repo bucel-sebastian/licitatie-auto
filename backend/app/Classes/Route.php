@@ -11,19 +11,22 @@ class Route {
         $routes [ $path ] = $callback;
     }
     
-
-// DE SCOS PARAMETRII DIN URL
-
-
-
     static public function run(){
         global $routes;
 
         $uri = $_SERVER['REQUEST_URI'];
         $uri = explode('?',$uri);
 
-        $uri_parameters = $uri[1];
-        $uri = $uri[0];
+        if(sizeof($uri)>1){
+            $uri_parameters = $uri[1];
+            $uri = $uri[0];
+            echo $uri_parameters;
+        }
+        else{
+            $uri=$uri[0];
+        }
+
+        
         
         $uri = trim($uri,'/');
         // $uri = parse_url($uri);
@@ -48,7 +51,7 @@ class Route {
     }
 
     static public function notFound(){
-        return view('404.view.php');
+        return api('404.api.php');
     }
 
 }

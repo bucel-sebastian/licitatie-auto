@@ -1,6 +1,5 @@
 <?php
 
-
-function view(string $file,array $params=[]){
-    include(ABSPATH . "/resources/view/" . $file);
+function api(string $file, array $params=[]){
+    include(ABSPATH . "/app/api/" . $file);
 }

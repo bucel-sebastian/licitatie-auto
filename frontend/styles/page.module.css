@@ -1,0 +1,134 @@
+
+
+.page_row{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.page_col_1{
+    width: 80%;
+}
+
+.page_col_2{
+    width: 20%;
+}
+
+.auctions_list{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:25px;
+}
+
+
+.auction_list_col{
+
+}
+
+.auction_item{
+    list-style: none;
+    margin: 15px 0 35px;
+}
+.auction_item_image{
+    width:100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.auction_item_image_link{
+    position: relative;
+}
+.auction_item_image_ratio{
+    position: relative;
+    padding-bottom: 65%;
+}
+.auction_item_image_wrap{
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.auction_item_image_wrap img{
+    width: 100%;
+    height: auto;
+    display:block !important;
+}
+
+
+.auction_item_metadata{
+    margin-top: 20px;
+}
+
+.auction_item_metadata_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.auction_item_metadata_title a{
+    text-decoration: none;
+    color: var(--foreground-color);
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+
+.auction_item_metadata_title:hover a{
+    text-decoration: underline;
+}
+
+.auction_item_metadata_watch{
+    opacity: 0;
+    transition: 0.15s ease;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.auction_item_metadata_location{
+    opacity: 0.8;
+}
+
+.auction_item:hover .auction_item_image_link::after{
+    content: "";
+    background-color: #1a1a1a10;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.auction_item:hover .auction_item_metadata_watch{
+    opacity: 1;
+}
+
+
+.auction_item_image_minibar{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 4px;
+    color: var(--background-primary);
+    background-color: #1a1a1aaa;
+    padding: 2px 5px;
+}
+
+.auction_item_image_minibat_timeleft{
+    margin-right: 7px;
+}
+
+.auction_item_image_minibat_highestbid{
+    margin-left: 7px;
+
+}
