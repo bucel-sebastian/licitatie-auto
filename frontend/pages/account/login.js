@@ -31,7 +31,8 @@ export default function Login() {
     });
     const data = await response.json();
 
-    if (data.status === 1) {
+    responseBody = data.body;
+    if (responseBody.status === 1) {
       if (sessionStorage.getItem("redirectUrl")) {
         router.push(sessionStorage.getItem("redirectUrl"));
       } else {

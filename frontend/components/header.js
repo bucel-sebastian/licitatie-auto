@@ -2,10 +2,23 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "@/styles/header.module.css";
 import { apiHost } from "./apiHost";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(
+    async () => {
+      const response = await fetch(apiHost + "/client/session");
+      const data = await response.json();
+      if(data.status === 200){
+        const responseBody = data.body;
+        if(responseBody.sessionStatus === 1){
+          se11tIsLoggedIn(true);
+        }
+      }
+    }
+  )
 
   const openAccountMenu = (event) => {};
 
