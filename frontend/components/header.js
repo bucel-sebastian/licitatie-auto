@@ -8,12 +8,11 @@ import getSession from "./session";
 export default function Header() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const { sessionData, sessionStatus, sessionToken } = getSession();
+  const { sessionData, sessionStatus, sessionToken, clearSession } = getSession();
+
   useEffect(() => {
-    console.log(sessionData);
     if (sessionStatus) {
       setIsLoggedIn(true);
-      console.log(sessionStatus);
     }
   });
 
