@@ -3,22 +3,14 @@ import { useRouter } from "next/router";
 import styles from "@/styles/header.module.css";
 import { apiHost } from "./apiHost";
 import { useEffect, useState } from "react";
+import { sessionData } from "./session";
 
 export default function Header() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  useEffect(
-    async () => {
-      const response = await fetch(apiHost + "/client/session");
-      const data = await response.json();
-      if(data.status === 200){
-        const responseBody = data.body;
-        if(responseBody.sessionStatus === 1){
-          se11tIsLoggedIn(true);
-        }
-      }
-    }
-  )
+  useEffect(() => {
+    console.log(sessionData);
+  });
 
   const openAccountMenu = (event) => {};
 

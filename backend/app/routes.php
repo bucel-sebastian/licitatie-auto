@@ -37,4 +37,6 @@ Route::set('/client/register',function(){
     return api('client/register.api.php');
 });
 
-
+Route::set('client/session/',function(){
+    return api('client/session.api.php');
+});

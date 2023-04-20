@@ -9,6 +9,7 @@ import styles from "@/styles/page.module.css";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { apiHost } from "@/components/apiHost";
+import Cookies from "js-cookie";
 
 export default function Login() {
   const router = useRouter();
@@ -30,9 +31,19 @@ export default function Login() {
       body: requestBody,
     });
     const data = await response.json();
+    console.log(data);
 
-    responseBody = data.body;
+    const responseBody = data.body;
     if (responseBody.status === 1) {
+      Cookies.set("sessionToken", responseBody.sessionToken);
+      if (responseBody.remember) {
+        Cookies.set("sessionClientData", responseBody.userData);
+        sessionStorage.setItem("sessionClientData", responseBody.userData);
+      } else {
+        Cookies.remove("sessionClientData");
+        sessionStorage.setItem("sessionClientData", responseBody.userData);
+      }
+
       if (sessionStorage.getItem("redirectUrl")) {
         router.push(sessionStorage.getItem("redirectUrl"));
       } else {

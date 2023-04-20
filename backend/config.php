@@ -14,4 +14,4 @@ $db = new Database($db_host,$db_user,$db_pass,$db_name);
 global $db;
 
 $results = $db->count("client_users",["*"],"`id`='3'");
-echo $results;
+// echo $results;
