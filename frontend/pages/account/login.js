@@ -37,11 +37,17 @@ export default function Login() {
     if (responseBody.status === 1) {
       Cookies.set("sessionToken", responseBody.sessionToken);
       if (responseBody.remember) {
-        Cookies.set("sessionClientData", responseBody.userData);
-        sessionStorage.setItem("sessionClientData", responseBody.userData);
+        Cookies.set("sessionClientData", JSON.stringify(responseBody.userData));
+        sessionStorage.setItem(
+          "sessionClientData",
+          JSON.stringify(responseBody.userData)
+        );
       } else {
         Cookies.remove("sessionClientData");
-        sessionStorage.setItem("sessionClientData", responseBody.userData);
+        sessionStorage.setItem(
+          "sessionClientData",
+          JSON.stringify(responseBody.userData)
+        );
       }
 
       if (sessionStorage.getItem("redirectUrl")) {
