@@ -8,7 +8,8 @@ import getSession from "./session";
 export default function Header() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const { sessionData, sessionStatus, sessionToken, clearSession } = getSession();
+  const { sessionData, sessionStatus, sessionToken, clearSession } =
+    getSession();
 
   useEffect(() => {
     if (sessionStatus) {
@@ -94,25 +95,15 @@ export default function Header() {
                 </Link>
               </li>
               <li className={styles.nav_item}>
-                {isLoggedIn ? (
-                  <button
-                    id="login_button"
-                    className={styles.login_button}
-                    // href="/account/login"
-                    onClick={openAccountMenu}
-                  >
-                    Contul meu
-                  </button>
-                ) : (
-                  <Link
-                    id="login_button"
-                    className={styles.login_button}
-                    href="/account/login"
-                    onClick={saveRedirectUrl}
-                  >
-                    Autentificare
-                  </Link>
-                )}
+                <Link
+                  id="login_button"
+                  className={styles.login_button}
+                  // href="/account/login"
+                  href={isLoggedIn ? "" : "/account/login"}
+                  onClick={isLoggedIn ? openAccountMenu : saveRedirectUrl}
+                >
+                  {isLoggedIn ? "Contul meu" : "Autentificare"}
+                </Link>
               </li>
             </ul>
           </nav>

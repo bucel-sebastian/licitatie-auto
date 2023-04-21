@@ -46,15 +46,16 @@ export default function Login() {
 
       <div className="page_wrap">
         <div className="page_content">
-          <div>
+          <div className={styles.login_form_container}>
+            <h3 className={styles.login_form_heading}>Ai uitat parola?</h3>
             <form onSubmit={handleLostPasswordForm}>
               <div>
-                <div>
+                <div className={styles.input_container}>
                   <label>E-mail</label>
                   <input type="email" name="username" required></input>
                 </div>
 
-                <div>
+                <div className={styles.submit_container}>
                   {loginIsLoading ? (
                     <button type="submit" disabled>
                       Se incarca
@@ -64,9 +65,12 @@ export default function Login() {
                   )}
                 </div>
                 <div>
-                  <Link href="/account/register">
-                    Nu ai cont? Înregistrează-te
-                  </Link>
+                  <label>
+                    Nu ai cont?&nbsp;
+                    <Link href="/account/register" className={styles.link_alt}>
+                      Înregistrează-te
+                    </Link>
+                  </label>
                 </div>
               </div>
             </form>

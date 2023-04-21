@@ -62,31 +62,47 @@ export default function Login() {
 
   return (
     <>
-      <CustomHead pageTitle={"Acasă"}></CustomHead>
+      <CustomHead pageTitle={"Autentificare"}></CustomHead>
 
       <Header></Header>
 
       <div className="page_wrap">
         <div className="page_content">
-          <div>
+          <div className={styles.login_form_container}>
+            <h3 className={styles.login_form_heading}>Autentificare</h3>
             <form onSubmit={handleLoginForm}>
               <div>
-                <div>
+                <div className={styles.input_container}>
                   <label>E-mail</label>
-                  <input type="email" name="username" required></input>
+                  <input
+                    type="email"
+                    name="username"
+                    title="Introdu email-ul"
+                    required
+                  ></input>
                 </div>
-                <div>
+                <div className={styles.input_container}>
                   <label>Parola</label>
-                  <input type="password" name="password" required></input>
-                  <Link href="/account/lost-password">Am uitat parola</Link>
+                  <input
+                    type="password"
+                    name="password"
+                    title="Introdu parola"
+                    required
+                  ></input>
+                  <Link
+                    href="/account/lost-password"
+                    className={styles.link_alt}
+                  >
+                    Am uitat parola
+                  </Link>
                 </div>
-                <div>
-                  <label>
+                <div className={styles.input_container}>
+                  <label className={styles.input_checkbox}>
                     <input type="checkbox" name="remember"></input> Tine-mă
                     minte
                   </label>
                 </div>
-                <div>
+                <div className={styles.submit_container}>
                   {loginIsLoading ? (
                     <button type="submit" disabled>
                       Se incarca
@@ -96,9 +112,12 @@ export default function Login() {
                   )}
                 </div>
                 <div>
-                  <Link href="/account/register">
-                    Nu ai cont? Înregistrează-te
-                  </Link>
+                  <label>
+                    Nu ai cont?&nbsp;
+                    <Link href="/account/register" className={styles.link_alt}>
+                      Înregistrează-te
+                    </Link>
+                  </label>
                 </div>
               </div>
             </form>

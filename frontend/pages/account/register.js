@@ -99,67 +99,74 @@ export default function Login() {
 
   return (
     <>
-      <CustomHead pageTitle={"Acasă"}></CustomHead>
+      <CustomHead pageTitle={"Înregistrare"}></CustomHead>
 
       <Header></Header>
 
       <div className="page_wrap">
         <div className="page_content">
-          <div>
+          <div className={styles.login_form_container}>
+            <h3 className={styles.login_form_heading}>Înregistrare</h3>
             <form onSubmit={handleRegisterForm}>
               <div>
-                <div>
+                <div className={styles.input_container}>
                   <label>Prenume</label>
                   <input
                     type="text"
                     name="first-name"
+                    title="Introdu prenume"
                     onKeyPress={handleInputLetter}
                     required
                   ></input>
                 </div>
-                <div>
+                <div className={styles.input_container}>
                   <label>Nume</label>
                   <input
                     type="text"
                     name="last-name"
+                    title="Introdu nume"
                     onKeyPress={handleInputLetter}
                     required
                   ></input>
                 </div>
-                <div>
+                <div className={styles.input_container}>
                   <label>E-mail</label>
                   <input
                     type="email"
                     name="username"
+                    title="Introdu email-ul"
                     onInput={handleEmailInput}
                     className={`${emailIsValid ? "" : styles.input_invalid}`}
                     required
                   ></input>
                 </div>
-                <div>
+                <div className={styles.input_container}>
                   <label>Număr de telefon</label>
                   <input
                     type="text"
                     name="phone"
+                    title="Introdu numărul de telefon"
                     onKeyPress={handleInputNumber}
                   ></input>
                 </div>
-                <div>
+                <div className={styles.input_container}>
                   <label>Parola</label>
                   <input
                     type="password"
                     name="password"
                     id="passwordInput"
+                    title="Introdu parola"
                     className={`${passwordIsValid ? "" : styles.input_invalid}`}
                     onInput={handlePasswordInput}
                     required
                   ></input>
                 </div>
-                <div>
+                <div className={styles.input_container}>
                   <label>Reintrodu parola</label>
                   <input
                     type="password"
                     name="re-password"
+                    title="Introdu parola"
                     id="repasswordInput"
                     className={`${
                       repasswordIsValid ? "" : styles.input_invalid
@@ -168,7 +175,16 @@ export default function Login() {
                     required
                   ></input>
                 </div>
-                <div>
+                <div className={styles.input_container}>
+                  <label className={styles.input_checkbox}>
+                    <input type="checkbox" name="tcagreement" required></input>{" "}
+                    Sunt de acord cu&nbsp;
+                    <Link href="/terms" className={styles.link_alt}>
+                      termenii și condițiile
+                    </Link>
+                  </label>
+                </div>
+                <div className={styles.submit_container}>
                   {registerIsLoading ? (
                     <button type="submit" disabled>
                       Se incarca
