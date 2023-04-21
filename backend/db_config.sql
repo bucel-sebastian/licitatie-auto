@@ -10,7 +10,6 @@ CREATE TABLE `db_2023_client_users` (
   PRIMARY KEY (`id`)
 )
 
-
 CREATE TABLE `db_2023_client_sessions` (
   `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `client_id` varchar(255) NOT NULL,
@@ -34,7 +33,7 @@ CREATE TABLE `db_2023_auctions` (
   `engine` varchar(255) NOT NULL,
   `drivetrain` varchar(255) NOT NULL,
   `transmission` varchar(255) NOT NULL,
-  `transmission_desc` varchar(255) NOT NULL
+  `transmission_desc` varchar(255) NOT NULL,
   `body_style` varchar(255) NOT NULL,
   `exterior_color` varchar(255) NOT NULL,
   `interior_color` varchar(255) NOT NULL,
@@ -54,18 +53,33 @@ CREATE TABLE `db_2023_auctions` (
   `images` text NOT NULL,
   `videos` text NOT NULL,
   `car_report_link` text NOT NULL,
-  `car_report_type` varchar(255) NOT NULL,
+  `car_report_type` varchar(255) NOT NULL
 )
 
-
 CREATE TABLE `db_2023_auctions_comments` (
-
+  `id` varchar(255) NOT NULL PRIMARY KEY,
+  `auction` varchar(255) NOT NULL,
+  `parent` varchar(255) NOT NULL,
+  `author` varchar(255) NOT NULL,
+  `message_type` varchar(255) NOT NULL,
+  `message` text NOT NULL,
+  `create_date` datetime NOT NULL,
+  `likes` int(11) NOT NULL DEFAULT 0
 )
 
 CREATE TABLE `db_2023_auctions_bids` (
-
+  `id` varchar(255) NOT NULL PRIMARY KEY,
+  `client` varchar(255) NOT NULL,
+  `auction` varchar(255) NOT NULL,
+  `value` varchar(255) NOT NULL,
+  `create_date` varchar(255) NOT NULL
 )
 
 CREATE TABLE `db_2023_auctions_questions` (
-  
+  `id` varchar(255) NOT NULL PRIMARY KEY,
+  `client` varchar(255) NOT NULL,
+  `auction` varchar(255) NOT NULL,
+  `question` text NOT NULL,
+  `answer` text NOT NULL,
+  `create_date` datetime NOT NULL
 )
