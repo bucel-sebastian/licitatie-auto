@@ -5,9 +5,40 @@ import CustomHead from "@/components/head";
 import Header from "@/components/header";
 
 import styles from "@/styles/page.module.css";
-import Sidebar from "@/components/sidebar";
 
-export default function Home() {
+import Select from "react-select";
+import { apiHost } from "@/components/apiHost";
+import { use, useState } from "react";
+
+export default function Sell({ cars }) {
+  // console.log(cars);
+  const [selectedCarModels, setSelectedCarModels] = useState([]);
+  const [selectedBrandOption, setSelectedBrandOption] = useState(null);
+  const [selectedModelOption, setSelectedModelOption] = useState(null);
+
+  const carBrands = cars.map((car) => {
+    return { value: car.brand, label: car.brand };
+  });
+
+  const carModelsList = cars.reduce((brands, car) => {
+    brands[car.brand] = car.models;
+    return brands;
+  });
+
+  const setBrandModels = (selectedBrandOption) => {
+    setSelectedBrandOption(selectedBrandOption);
+    setSelectedCarModels(
+      carModelsList[selectedBrandOption.value].map((model) => {
+        return { value: model, label: model };
+      })
+    );
+    setSelectedModelOption(null);
+  };
+
+  const setCarModel = (selectedModelOption) => {
+    setSelectedModelOption(selectedModelOption);
+  };
+
   return (
     <>
       <CustomHead pageTitle={"Vinde"}></CustomHead>
@@ -16,11 +47,26 @@ export default function Home() {
 
       <div className="page_wrap">
         <div className="page_content">
-          <div className={styles.page_row}>
-            <div className={styles.page_col_1}></div>
-            <div className={styles.page_col_2}>
-              <Sidebar></Sidebar>
-            </div>
+          <div>
+            <h3>Publică o mașină</h3>
+            <form>
+              <div className={styles.input_container}>
+                <label>Brand</label>
+                <Select
+                  value={selectedBrandOption}
+                  options={carBrands}
+                  onChange={setBrandModels}
+                />
+              </div>
+              <div className={styles.input_container}>
+                <label>Model</label>
+                <Select
+                  value={selectedModelOption}
+                  options={selectedCarModels}
+                  onChange={setCarModel}
+                />
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -28,4 +74,16 @@ export default function Home() {
       <Footer></Footer>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const response = await fetch(apiHost + "/data/carlist");
+  const data = await response.json();
+  console.log(data);
+
+  return {
+    props: {
+      cars: data.body.data,
+    },
+  };
 }

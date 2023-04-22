@@ -41,3 +41,6 @@ Route::set('client/session/validate',function(){
     return api('client/session.api.php');
 });
 
+Route::set('data/carlist',function(){
+    return api('data/carlist.api.php');
+});

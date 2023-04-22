@@ -22,7 +22,6 @@
     align-items: center;
     align-content: center;
     height: 80px;
-    overflow: hidden;
   }
   
   .header_left_wrap, .header_right_wrap, .header_center_wrap {
@@ -66,13 +65,16 @@
     filter: brightness(0.95);
   }
   
-  .nav-link {
+  .nav_link {
     color: var(--foreground-color);
     font-weight: 600;
+    width: 100%;
+    text-align: center;
+    display: block;
   }
   
   .login_button {
-    color: var(--foreground-color);
+    color: var(--background-primary);
     font-size: 16px;
     font-weight: 600;
     background-color: var(--accent-color-primary);
@@ -120,3 +122,55 @@
     outline: none;
     cursor: pointer;
   }
+
+.account_button_container{
+  position: relative;
+}
+
+  .account_dropdown_menu{
+    position: absolute;
+    z-index: 100;
+    top:150%;
+    left:-25%;
+    right: -25%;
+    padding: 5% 0;
+    min-width: 100%;
+    border-radius: 5px;
+    background-color: var(--background-primary);
+    border: 1px solid #00000033;
+    box-shadow: 0px 4px 7px 5px #1a1a1a23;
+  }
+
+  .account_dropdown_menu li{
+    list-style: none;
+  }
+
+
+  .account_dropdown_menu.hidden{
+    display: none;
+  }
+
+  .dropdown_nav_item{
+    width: 100%;
+    padding: 8px 10%;
+
+  }
+
+  .dropdown_nav_greetings{
+    text-align: center;
+    padding: 5px 0 7px;
+    border-bottom: 1px solid #1a1a1a33;
+    user-select: none;
+  }
+  .dropdown_nav_item:hover{
+    filter: brightness(0.95);
+    background-color: #00000005;
+  }
+
+  .dropdown_nav_link{
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  

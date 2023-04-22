@@ -19,6 +19,7 @@ CREATE TABLE `db_2023_client_sessions` (
 
 CREATE TABLE `db_2023_auctions` (
   `id` int(11) NOT NULL PRIMARY KEY,
+  `status` varchar(255) NOT NULL,
   `slug` varchar(255) NOT NULL,
   `seller` varchar(255) NOT NULL,
   `seller_type` varchar(255) NOT NULL,

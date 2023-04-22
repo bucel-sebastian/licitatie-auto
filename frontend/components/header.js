@@ -4,21 +4,9 @@ import styles from "@/styles/header.module.css";
 import { apiHost } from "./apiHost";
 import { useEffect, useState } from "react";
 import getSession from "./session";
+import AccountButton from "./accountButton";
 
 export default function Header() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  const { sessionData, sessionStatus, sessionToken, clearSession } =
-    getSession();
-
-  useEffect(() => {
-    if (sessionStatus) {
-      setIsLoggedIn(true);
-    }
-  });
-
-  const openAccountMenu = (event) => {};
-
   const router = useRouter();
 
   const searchHandler = (event) => {
@@ -30,14 +18,6 @@ export default function Header() {
         query: event.target.header_search_bar_input.value,
       },
     });
-  };
-
-  const saveRedirectUrl = (event) => {
-    if (router.asPath === "/account/login") {
-      sessionStorage.setItem("redirectUrl", "/");
-    } else {
-      sessionStorage.setItem("redirectUrl", router.asPath);
-    }
   };
 
   const showSearchRecomandations = (event) => {
@@ -95,15 +75,7 @@ export default function Header() {
                 </Link>
               </li>
               <li className={styles.nav_item}>
-                <Link
-                  id="login_button"
-                  className={styles.login_button}
-                  // href="/account/login"
-                  href={isLoggedIn ? "" : "/account/login"}
-                  onClick={isLoggedIn ? openAccountMenu : saveRedirectUrl}
-                >
-                  {isLoggedIn ? "Contul meu" : "Autentificare"}
-                </Link>
+                <AccountButton />
               </li>
             </ul>
           </nav>

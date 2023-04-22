@@ -1,8 +1,10 @@
 import Cookies from "js-cookie";
 import { apiHost } from "./apiHost";
 import { useEffect, useState } from "react";
+import React from "react";
+import { ReactDOM } from "react";
 
-export default function getSession() {
+export default function GetSession() {
   const [sessionData, setSessionData] = useState(null);
   const [sessionStatus, setSessionStatus] = useState(false);
   const [sessionToken, setSessionToken] = useState(null);
