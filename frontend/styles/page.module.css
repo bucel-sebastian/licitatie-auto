@@ -216,3 +216,16 @@
 .link_alt:hover{
     text-decoration:solid var(--accent-color-primary);
 }
+
+
+.input_select{
+    width: 100%;
+    border:none;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--background-secondary);
+    padding: 12px 15px;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
