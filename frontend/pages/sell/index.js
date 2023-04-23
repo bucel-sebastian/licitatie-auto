@@ -50,13 +50,18 @@ export default function Sell({ cars }) {
           <div>
             <h3>Publică o mașină</h3>
             <form>
+              <div className={styles.input_group}>
+              
               <div className={styles.input_container}>
                 <label>Brand</label>
                 <Select
                   value={selectedBrandOption}
                   options={carBrands}
                   onChange={setBrandModels}
-                  className={styles.input_select}
+                  className="input_select"
+                  classNamePrefix="input_select"
+                  placeholder="Selectează..."
+                  unstyled
                 />
               </div>
               <div className={styles.input_container}>
@@ -65,10 +70,17 @@ export default function Sell({ cars }) {
                   value={selectedModelOption}
                   options={selectedCarModels}
                   onChange={setCarModel}
-                  className={styles.input_select}
-                  classNamePrefix={styles.input_select}
+                  className="input_select"
+                  classNamePrefix="input_select"
+                  placeholder="Selectează..."
+                  unstyled
+
                 />
               </div>
+              </div>
+              
+              
+              
             </form>
           </div>
         </div>
