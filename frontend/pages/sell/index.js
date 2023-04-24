@@ -73,6 +73,7 @@ export default function Sell({ cars }) {
                   className="input_select"
                   classNamePrefix="input_select"
                   placeholder="Selectează..."
+                  noOptionsMessage={()=>"Selecteaza un brand"}
                   unstyled
 
                 />

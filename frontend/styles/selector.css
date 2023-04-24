@@ -23,7 +23,7 @@
     letter-spacing: 0.5px;
   }
 
-  .input_select:has(.input_select__control--is-focused){
+  .input_select:has(.input_select__control--menu-is-open){
     border-radius: 5px 5px 0 0;
   }
 
@@ -31,19 +31,37 @@
   .input_select__menu{
     width: 100%;
     border-radius: 0 0 5px 5px;
+    overflow: hidden;
     left: 0;
     background-color: var(--background-secondary);
+    border-top: 1px solid #1a1a1a55;
   }
 
-  .input_select__menuList{
-    border-radius: 0 0 5px 5px;
+  .input_select__menu-list{
+    padding: 0;
   }
 
+  .input_select__menu-list::-webkit-scrollbar{width: 4px;}
+  .input_select__menu-list::-webkit-scrollbar-track{
+    background-color: var(--background-secondary);
+  }
+  .input_select__menu-list::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: var(--foreground-color);
+  }
+
+  .input_select__option:first-of-type{
+    border-top:none;
+  }
   .input_select__option{
-    padding:10px 15px;
+    padding:12px 15px;
     border-top: 1px solid #1a1a1a55;
   }
 
   .input_select__option:hover{
     filter: brightness(0.95);
+  }
+
+  .input_select__menu-notice--no-options{
+    padding:12px 0;
   }
